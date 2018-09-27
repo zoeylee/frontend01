@@ -44,7 +44,7 @@ Considering this feature is not complicated, so mostly I created feature by Angu
 ---
 
 ### UI Flow
-##### for designer
+##### prototype for designer
 * Step 1. display search input field
 
 <img src="https://i.imgur.com/hXPjeJ3.png" width="400">
