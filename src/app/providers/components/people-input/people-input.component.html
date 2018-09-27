@@ -1,0 +1,30 @@
+<div class="example-input">
+  <input nz-input nz-tooltip [nzTitle]="titleTemplate" nzPlacement="bottom" placeholder="large size" nzSize="large">
+</div>
+
+<ng-template #titleTemplate>
+  <div class="cust01">
+    <i class="anticon anticon-plus"></i>
+    <span class="cust02"><font class="cust">2</font>Rooms</span>
+    <i class="anticon anticon-minus"></i>
+  </div>
+  <div class="cust01">
+    <i class="anticon anticon-plus"></i>
+    <span class="cust02"><font class="cust">3</font>Adults</span>
+    <i class="anticon anticon-minus"></i>
+  </div>
+  <div class="cust01">
+    <i class="anticon anticon-plus"></i>
+    <span class="cust02"><font class="cust">1</font>Children</span>
+    <i class="anticon anticon-minus"></i>
+  </div>
+  <div style="margin: 0 auto">
+     <div style="margin-bottom: .7rem;margin-top: .7rem">Children's ages</div>
+    <nz-select style="width: 70px;" [(ngModel)]="singleValue" [nzSize]="size">
+      <nz-option *ngFor="let option of listOfOption" [nzLabel]="option.label" [nzValue]="option.value"></nz-option>
+    </nz-select>
+  </div>
+  <div class="cust01">
+    <label nz-checkbox [(ngModel)]="checked" class="custfont">	I'd prefer a family room</label>
+  </div>
+</ng-template>
